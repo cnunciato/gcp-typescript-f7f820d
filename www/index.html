@@ -1,1 +1,21 @@
-<html><body><h1>Hello, world!</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<body>
+    <h1 id="greeting">Loading...</h1>
+    <script>
+        fetch("/api/hello")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("greeting").textContent = data.greeting;
+            })
+            .catch(() => {
+                document.getElementById("greeting").textContent = "Failed to load greeting.";
+            });
+    </script>
+</body>
+</html>
