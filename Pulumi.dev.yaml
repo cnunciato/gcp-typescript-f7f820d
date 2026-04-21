@@ -1,0 +1,4 @@
+config:
+  gcp:project: cnunciato-pulumi-test
+environment:
+  - gcp-login/dev

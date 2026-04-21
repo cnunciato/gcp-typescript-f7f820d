@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude:*)",
+      "Bash(pulumi up:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{redirect_url}\" http://35.244.206.12)",
+      "Bash(curl:*)",
+      "Bash(gsutil ls:*)",
+      "Bash(gsutil uniformbucketlevelaccess:*)",
+      "Bash(gsutil iam:*)",
+      "Bash(gcloud resource-manager:*)",
+      "Bash(gcloud storage buckets describe:*)",
+      "Bash(pulumi refresh:*)",
+      "Bash(gcloud auth list:*)",
+      "Bash(gcloud config get-value account:*)",
+      "Bash(ls:*)",
+      "Bash(gcloud config get-value project:*)",
+      "Bash(gcloud auth:*)",
+      "Bash(gcloud services enable:*)",
+      "Bash(gcloud billing projects link:*)",
+      "Bash(gcloud compute backend-buckets list:*)",
+      "Bash(gcloud services:*)"
+    ]
+  }
+}
